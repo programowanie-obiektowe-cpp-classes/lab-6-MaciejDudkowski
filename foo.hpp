@@ -13,9 +13,7 @@ std::vector< char > foo(std::list< Human >& people)
 
     std::for_each(people.begin(), people.end(), [](Human& h) { h.birthday(); });
 
-    std::transform(people.rbegin(), people.rend(), std::back_inserter(retval), [](const Human& h) {
-        return h.isMonster() ? 'n' : 'y';
-    });
+    // Twoja implementacja tutaj
 
     return retval;
 }
